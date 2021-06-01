@@ -4,7 +4,7 @@
              x:Class="XamarinDepartamentos.Views.DepartamentosView"
              xmlns:local="clr-namespace:XamarinDepartamentos"
              BindingContext="{Binding Source={x:Static local:App.ServiceLocator}, Path=DepartamentosViewModel}"
-             x:Name="PageDepartemantosView">
+             x:Name="PageDepartamentosView">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Departamentos"
