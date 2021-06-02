@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDepartamentos.Views.DetailsDepartamentoView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Departamento.IdDepartamento, StringFormat='Id departamento: {0}'}" FontSize="25"
+                VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding Departamento.Nombre, StringFormat='Nombre: {0}'}" FontSize="25" TextColor="Blue"
+                VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding Departamento.Localidad, StringFormat='Localidad: {0}'}" FontSize="25" TextColor="Blue"
+                VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

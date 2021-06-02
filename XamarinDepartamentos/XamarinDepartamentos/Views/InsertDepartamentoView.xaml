@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDepartamentos.Views.InsertDepartamentoView"
+             xmlns:local="clr-namespace:XamarinDepartamentos"
+             BindingContext="{Binding Source={x:Static local:App.ServiceLocator}, Path=DepartamentoViewModel}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Edicion" FontSize="50" TextColor="Black"/>
+            <Label Text="Id Departamento" HorizontalOptions="CenterAndExpand" />
+            <Entry Text="{Binding Departamento.IdDepartamento}"/>
+            <Label Text="Nombre: "/>
+            <Entry Text="{Binding Departamento.Nombre}" Placeholder="Nombre departamento"/>
+            <Label Text="Localidad: "/>
+            <Entry Text="{Binding Departamento.Localidad}" Placeholder="Localidad"/>
+            <Button Text="Guardar cambios" Command="{Binding InsertarDepartamento}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

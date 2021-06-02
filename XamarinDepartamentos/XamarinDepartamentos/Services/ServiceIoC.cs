@@ -20,6 +20,7 @@ namespace XamarinDepartamentos.Services
             ContainerBuilder builder = new ContainerBuilder();
             builder.RegisterType<ServiceDepartamentos>();
             builder.RegisterType<DepartamentosViewModel>();
+            builder.RegisterType<DepartamentoViewModel>();
             this.container = builder.Build();
         }
 
@@ -28,6 +29,14 @@ namespace XamarinDepartamentos.Services
             get
             {
                 return this.container.Resolve<DepartamentosViewModel>();
+            }
+        }
+
+        public DepartamentoViewModel DepartamentoViewModel
+        {
+            get
+            {
+                return this.container.Resolve<DepartamentoViewModel>();
             }
         }
     }

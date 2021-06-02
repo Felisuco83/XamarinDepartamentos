@@ -19,7 +19,7 @@
                             <Button Text="Detalles" HorizontalOptions="End" CommandParameter="{Binding .}" 
                                     Command="{Binding BindingContext.MostrarDetalles, Source={x:Reference PageDepartamentosView}}"/>
                             <Button Text="Editar" HorizontalOptions="End" CommandParameter="{Binding .}" 
-                                    Command="{Binding BindingContext.MostrarDetalles, Source={x:Reference PageDepartamentosView}}"/>
+                                    Command="{Binding BindingContext.ModificarDepartamento, Source={x:Reference PageDepartamentosView}}"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
